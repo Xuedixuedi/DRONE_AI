@@ -205,7 +205,7 @@ export default {
         setSideBar() {
             var hideMenu = document.getElementsByClassName("hide-menu")
             var sideBar = document.getElementsByClassName("side-bar")
-
+            console.log("haahh")
             if (sideBar[0].style.display == "none") {
                 hideMenu[0].style.left = "-10px"
                 sideBar[0].style.display = "block"
@@ -221,14 +221,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .hide-menu {
+    z-index: 6;
     display: block;
     position: absolute;
     top: 500px;
-    left: -10px;
+    left: 0px;
     transform: rotate(180deg);
 }
 .side-bar {
-    display: block;
+    display: none;
     position: absolute;
     left: 10px;
     top: 10px;

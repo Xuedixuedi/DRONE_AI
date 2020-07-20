@@ -88,7 +88,7 @@
                     />
                 </svg>
             </div>
-            <div class="create-button">
+            <div class="create-button" @click="linkToDetail">
                 <svg
                     width="120"
                     height="118"
@@ -176,7 +176,12 @@
 
 <script>
 export default {
-    name: "Leftpart"
+    name: "Leftpart",
+    methods: {
+        linkToDetail() {
+            this.$router.push("/detail")
+        }
+    }
 }
 </script>
 
@@ -188,8 +193,6 @@ export default {
     justify-content: center;
 }
 
-.main {
-}
 .main-logo {
     text-align: center;
     position: relative;
