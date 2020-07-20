@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import HomeHeader from "./Header.vue"
-import HomeLeftpart from "./Leftpart.vue"
-import HomeRightpart from "./Rightpart.vue"
+import HomeHeader from "./components/Header.vue"
+import HomeLeftpart from "./components/Leftpart.vue"
+import HomeRightpart from "./components/Rightpart.vue"
 
 export default {
     name: "Home",
