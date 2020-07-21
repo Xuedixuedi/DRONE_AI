@@ -222,7 +222,7 @@ export default {
                 sources: [
                     {
                         type: "video/mp4", // 这里的种类支持很多种：基本视频格式、直播、流媒体等，具体可以参看git网址项目
-                        src: require("/Users/xuedixuedi/Downloads/waitan02/waitan02.mp4_result.mp4") // url地址
+                        src: require("../../../assets/video/waitan02.mp4_result.mp4") // url地址
                     }
                 ],
                 hls: true,
