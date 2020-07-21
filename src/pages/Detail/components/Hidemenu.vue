@@ -235,7 +235,7 @@ export default {
     top: 10px;
     width: 80px;
     bottom: 10px;
-    z-index: 5;
+    z-index: 3;
     background: rgba(0, 0, 0, 0.7);
     border: 1px solid rgba(229, 229, 229, 0.05);
     box-sizing: border-box;
