@@ -42,7 +42,6 @@ export default {
 
 <style scoped>
 .right-part {
-    height: 900px;
     width: 50%;
     display: flex;
     justify-content: center;

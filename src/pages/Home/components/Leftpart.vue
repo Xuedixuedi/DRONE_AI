@@ -188,7 +188,7 @@ export default {
 <style scoped>
 .left-part {
     height: 1000px;
-    width: 30%;
+    width: 10%;
     display: flex;
     justify-content: center;
 }

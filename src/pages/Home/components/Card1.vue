@@ -190,7 +190,7 @@ export default {
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 858px;
+    width: 820px;
     height: 233px;
     border-radius: 15px;
     background-color: #2b3844;

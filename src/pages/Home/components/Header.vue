@@ -30,27 +30,26 @@
                     fill-opacity="0.8"
                 />
             </svg>
-
-            <div class="search-box">
-                <input class="input-box" type="search" placeholder="Search" />
-            </div>
-            <div class="user-group">
-                <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M12 0C5.4 0 0 5.4 0 12C0 16.05 2.24995 19.95 5.69995 22.2C7.49995 23.4 9.75 24 12 24C14.25 24 16.5 23.4 18.3 22.2C21.75 20.1 24 16.2 24 12C24 5.4 18.6 0 12 0ZM12 21C10.35 21 8.69998 20.55 7.34998 19.65C8.54998 18.6 10.2 18 12 18C13.8 18 15.45 18.6 16.65 19.65C15.3 20.55 13.65 21 12 21ZM9 12C9 10.35 10.35 9 12 9C13.65 9 15 10.35 15 12C15 13.65 13.65 15 12 15C10.35 15 9 13.65 9 12ZM18.9 17.7C18.75 17.55 18.75 17.4 18.6 17.4C18 16.8 17.25 16.5 16.5 16.05C17.4 15 18 13.5 18 12C18 8.7 15.3 6 12 6C8.7 6 6 8.7 6 12C6 13.5 6.60002 15 7.65002 16.05C6.90002 16.35 6.15005 16.8 5.55005 17.4C5.40005 17.55 5.25 17.7 5.25 17.7C3.75 16.2 3 14.1 3 12C3 7.05 7.05 3 12 3C16.95 3 21 7.05 21 12C21 14.1 20.25 16.2 18.9 17.7Z"
-                        fill="#A279F9"
-                    />
-                </svg>
-                <div class="user-name">user name</div>
-            </div>
+        </div>
+        <div class="search-box">
+            <input class="input-box" type="search" placeholder="Search" />
+        </div>
+        <div class="user-group">
+            <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 0C5.4 0 0 5.4 0 12C0 16.05 2.24995 19.95 5.69995 22.2C7.49995 23.4 9.75 24 12 24C14.25 24 16.5 23.4 18.3 22.2C21.75 20.1 24 16.2 24 12C24 5.4 18.6 0 12 0ZM12 21C10.35 21 8.69998 20.55 7.34998 19.65C8.54998 18.6 10.2 18 12 18C13.8 18 15.45 18.6 16.65 19.65C15.3 20.55 13.65 21 12 21ZM9 12C9 10.35 10.35 9 12 9C13.65 9 15 10.35 15 12C15 13.65 13.65 15 12 15C10.35 15 9 13.65 9 12ZM18.9 17.7C18.75 17.55 18.75 17.4 18.6 17.4C18 16.8 17.25 16.5 16.5 16.05C17.4 15 18 13.5 18 12C18 8.7 15.3 6 12 6C8.7 6 6 8.7 6 12C6 13.5 6.60002 15 7.65002 16.05C6.90002 16.35 6.15005 16.8 5.55005 17.4C5.40005 17.55 5.25 17.7 5.25 17.7C3.75 16.2 3 14.1 3 12C3 7.05 7.05 3 12 3C16.95 3 21 7.05 21 12C21 14.1 20.25 16.2 18.9 17.7Z"
+                    fill="#A279F9"
+                />
+            </svg>
+            <div class="user-name">user name</div>
         </div>
     </div>
 </template>
@@ -63,11 +62,12 @@ export default {
 
 <style scoped>
 .head {
-    width: 100%;
+    display: flex;
     height: 75px;
     background-color: #2b3844;
     box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.3);
-    display: flex;
+    align-content: center;
+    justify-content: space-around;
 }
 
 .logo {
@@ -75,6 +75,7 @@ export default {
     left: 30px;
     display: flex;
     align-items: center;
+    width: 50%;
 }
 
 .logo-text {
@@ -82,10 +83,15 @@ export default {
 }
 .search-box {
     position: relative;
-    left: 990px;
     border-radius: 5px;
+    display: flex;
+    align-content: flex-end;
+    top: 22px;
+    width: 30%;
 }
 .input-box {
+    position: relative;
+    text-align: left;
     border: none;
     width: 188px;
     height: 32px;
@@ -98,7 +104,6 @@ export default {
 
 .user-group {
     position: relative;
-    left: 1280px;
     width: 120px;
     display: flex;
     align-items: center;

@@ -38,5 +38,6 @@ export default {
 .main {
     display: flex;
     justify-content: space-around;
+    align-content: center;
 }
 </style>
