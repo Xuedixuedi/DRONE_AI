@@ -18,5 +18,12 @@ const produceNewsData = function() {
 
     return newsList
 }
+
+const homeCardData = function() {
+    let cardList = []
+    let newNewsObject1 = {
+        tite: "Pedestrian Detection"
+    }
+}
 // 请求该url，就可以返回newsList
 Mock.mock("/mock/news", produceNewsData) // 后面讲这个api的使用细节

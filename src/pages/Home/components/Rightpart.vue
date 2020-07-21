@@ -1,8 +1,8 @@
 <template>
     <div class="right-part">
-        <card class="card"></card>
-        <card class="card"></card>
-        <card class="card"></card>
+        <card1 class="card"></card1>
+        <card2 class="card"></card2>
+        <card3 class="card"></card3>
         <div class="add-new">
             <svg
                 width="247"
@@ -26,12 +26,16 @@
 </template>
 
 <script>
-import Card from "./Card.vue"
+import Card1 from "./Card1.vue"
+import Card2 from "./Card2.vue"
+import Card3 from "./Card3.vue"
 
 export default {
     name: "Rightpart",
     components: {
-        Card
+        Card1,
+        Card2,
+        Card3
     }
 }
 </script>
